@@ -46,6 +46,6 @@ class TipsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def tip_params
-      params.require(:tip).permit(:title, :body, :stack, :website)
+      params.permit(:title, :body, :stack, :website)
     end
 end
