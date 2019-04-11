@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_09_183352) do
+ActiveRecord::Schema.define(version: 2019_04_09_185340) do
+
+  create_table "decks", force: :cascade do |t|
+    t.text "description"
+    t.text "list"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "documents", force: :cascade do |t|
     t.string "location"
