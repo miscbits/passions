@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2019_04_09_185340) do
 
   create_table "decks", force: :cascade do |t|
     t.text "description"
+    t.string "signature_card"
     t.text "list"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
