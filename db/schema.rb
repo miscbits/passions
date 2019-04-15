@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_04_09_185340) do
 
   create_table "decks", force: :cascade do |t|
+    t.string "name"
     t.text "description"
     t.string "signature_card"
     t.text "list"
