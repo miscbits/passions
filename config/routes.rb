@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :decks
-  resources :documents
+  resources :decks, only: [:index, :show]
+  resources :documents, only: [:index, :show]
   root to: 'home#index'
-  resources :jobs
-  resources :tips
-  resources :reports
+  resources :jobs, only: [:index, :show]
+  resources :tips, only: [:index, :show]
+  resources :reports, only: [:index, :show]
 end

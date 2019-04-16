@@ -46,6 +46,6 @@ class DecksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def deck_params
-      params.require(:deck).permit(:description, :list)
+      params.permit( :name, :description, :signature_card, :list )
     end
 end
